@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Laily/work/config'
+let g:netrw_dirhist_2='/Users/Laily/go/src/test/t1'
+let g:netrw_dirhist_3='/Users/Laily/.SpaceVim'
+let g:netrw_dirhist_4='/Users/Laily/go/src/test/t1'
+let g:netrw_dirhist_5='/Users/Laily/.SpaceVim'
