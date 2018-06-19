@@ -1,0 +1,15 @@
+[user]
+	name = Laily
+	email = i@laily.net
+[core]
+	autocrlf = input
+	quotepath = false
+    editor = /usr/local/bin/nvim
+[alias]
+    merge2 = "!f() { git checkout $1 && git merge $2 && git checkout -; }; f"
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+[push]
+	default = current
