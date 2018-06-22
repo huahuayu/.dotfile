@@ -42,3 +42,6 @@ name = "lang#go"
 
 [[layers]]
 name = "lang#python"
+
+[[layers]]
+name = "lang/markdown"
