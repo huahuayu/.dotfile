@@ -44,4 +44,7 @@ name = "lang#go"
 name = "lang#python"
 
 [[layers]]
+name = "lang#java"
+
+[[layers]]
 name = "lang#markdown"
