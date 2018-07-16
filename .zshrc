@@ -93,3 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+[ -f ~/.zprofile ] && source ~/.zprofile
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
