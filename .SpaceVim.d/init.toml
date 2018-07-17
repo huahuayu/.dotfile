@@ -54,6 +54,11 @@ name = "lang#html"
 
 [[layers]]
 name = "lang#typescript"
+
 [[layers]]
 name = "fzf"
+
+[[layers]]
+name = "VersionControl"
+
 
