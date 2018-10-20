@@ -7,9 +7,10 @@
     editor = /usr/local/bin/nvim
 [alias]
     merge2 = "!f() { git checkout $1 && git merge $2 && git checkout -; }; f"
+    au = add -u
     co = checkout
-    ci = commit
-    br = branch
+    cm = commit -m 
     st = status
+    br = branch
 [push]
 	default = current
