@@ -21,6 +21,7 @@
     statusline_separator = "arrow"
     statusline_inactive_separator = "arrow"
     buffer_index_type = 4
+    autocomplete_method = 'deoplete'
     enable_tabline_filetype_icon = true
     enable_statusline_display_mode = false
     vim_help_language = "cn"
@@ -60,5 +61,8 @@ name = "fzf"
 
 [[layers]]
 name = "VersionControl"
+
+[[layers]]
+name = "tmux"
 
 

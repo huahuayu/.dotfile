@@ -14,3 +14,5 @@
     br = branch
 [push]
 	default = current
+[merge]
+    tool = vimdiff
