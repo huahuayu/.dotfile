@@ -26,6 +26,8 @@
     enable_statusline_display_mode = false
     vim_help_language = "cn"
     default_indent = 4
+    bootstrap_before = "myspacevim#before"
+
 
 # Enable autocomplete layer
 [[layers]]
