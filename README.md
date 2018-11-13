@@ -21,6 +21,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ```shell
 ln -sf ~/.dotfile/.zshrc ~/  
 ln -sf ~/.dotfile/laily.zsh-theme ~/.oh-my-zsh/themes/
+ln -sf ~/.dotfile/.tmux.conf ~/
 ```
 
 ### spacevim 安装
