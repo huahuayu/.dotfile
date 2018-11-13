@@ -32,6 +32,6 @@ ln -sf ~/.dotfile/.tmux.conf ~/
 
 ### git config
 ```shell
-ls -sf ~/.dotfile/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfile/.gitconfig ~/.gitconfig
 ```
 
