@@ -61,6 +61,7 @@ ZSH_THEME="laily"
 plugins=(
   git
   z
+  jsontools
 )
 
 source $ZSH/oh-my-zsh.sh
