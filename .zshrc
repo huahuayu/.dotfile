@@ -62,6 +62,8 @@ plugins=(
   git
   z
   jsontools
+  httpie
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
