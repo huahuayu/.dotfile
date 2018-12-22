@@ -64,6 +64,7 @@ plugins=(
   jsontools
   httpie
   vi-mode
+  zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
 )
 
 source $ZSH/oh-my-zsh.sh
