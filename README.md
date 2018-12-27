@@ -35,7 +35,7 @@ ln -sf ~/.dotfile/.tmux.conf ~/
 安装  
 `curl -sLf https://spacevim.org/install.sh | bash`  
 初始化配置  
-`ln -sf ~/.dotfile/.SpaceVim.d ~/` 
+`ln -sf ~/.dotfile/.SpaceVim.d ~/.SpaceVim.d` 
 
 ### git config
 ```shell
