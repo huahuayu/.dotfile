@@ -16,6 +16,9 @@ alias mtj='md_to_json'
 # alias for clear 
 alias cl='clear'
 
+# alias for tldr
+alias sman='tldr'
+
 # ln vi/vim
 ln -sf /usr/local/Cellar/vim/8.1.0600_1/bin/vim /usr/local/bin/vim
 ln -sf /usr/local/Cellar/vim/8.1.0600_1/bin/vim /usr/local/bin/vi

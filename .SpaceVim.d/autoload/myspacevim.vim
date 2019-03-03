@@ -5,3 +5,5 @@ func! myspacevim#before() abort
     "等号左右空格
     "inoremap = <Space>=<Space>
 endf
+
+let g:vimfiler_direction = 'topleft'
