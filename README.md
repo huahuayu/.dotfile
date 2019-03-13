@@ -27,6 +27,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 初始化配置  
 ```shell
 ln -sf ~/.dotfile/.zshrc ~/  
+ln -sf ~/.dotfile/.zprofile ~/.zprofile  
 ln -sf ~/.dotfile/shiming.zsh-theme ~/.oh-my-zsh/themes/
 ln -sf ~/.dotfile/.tmux.conf ~/
 ```
