@@ -66,7 +66,7 @@ plugins=(
   vi-mode
   docker docker-compose
 # zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
-  zsh-syntax-highlighting
+# zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
