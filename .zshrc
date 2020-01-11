@@ -64,8 +64,9 @@ plugins=(
   jsontools
   httpie
   vi-mode
-  zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
   docker docker-compose
+  zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh

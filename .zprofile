@@ -75,6 +75,8 @@ case `uname` in
 	export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
 	export PATH=${JAVA_HOME}/bin:$PATH
 
+	export PATH=/usr/local/sbin:$PATH
+
   ;;
   Linux)
     # commands for Linux go here
