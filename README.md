@@ -5,6 +5,10 @@ cd ~
 git clone https://github.com/huahuayu/.dotfile.git
 ```
 
+### 切换分支
+Mac切换到mac分支  
+Linux切换到linux分支
+
 ### zsh 安装
 安装 zsh  
 `https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH`  
