@@ -6,8 +6,6 @@ set mouse=a
 set t_Co=256
 " 开启文件类型检查，并且载入与该类型对应的缩进规则
 filetype indent on
-" 回车后下一行和上一行保持相同缩进
-set autoindent
 " 搜索高亮显示
 set hlsearch
 " 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
