@@ -77,6 +77,9 @@ case `uname` in
 
 	export PATH=/usr/local/sbin:$PATH
 
+	# inetutils(ftp tools etc)
+	export PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
+
   ;;
   Linux)
     # commands for Linux go here
