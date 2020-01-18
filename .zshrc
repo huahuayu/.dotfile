@@ -62,7 +62,6 @@ plugins=(
   git
   z
   jsontools
-  httpie
   vi-mode
   docker docker-compose
   zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
