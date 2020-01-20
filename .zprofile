@@ -80,6 +80,9 @@ case `uname` in
 	# inetutils(ftp tools etc)
 	export PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
 
+    # iterm2 shell integration  
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
   ;;
   Linux)
     # commands for Linux go here
