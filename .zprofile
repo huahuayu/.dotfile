@@ -3,11 +3,11 @@ case `uname` in
 	# list process & ports
 	listen() {
 	    if [ $# -eq 0 ]; then
-		lsof -iTCP -sTCP:LISTEN -n -P
+		    lsof -iTCP -sTCP:LISTEN -n -P
 	    elif [ $# -eq 1 ]; then
-		lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+		    lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
 	    else
-		echo "Usage: listen [pattern]"
+		    echo "Usage: listen [pattern]"
 	    fi
 	}
 
@@ -79,6 +79,26 @@ case `uname` in
 
   ;;
   Linux)
+    # gopath & goproxy
+    if [ -z "$GOROOT" ]; then
+        export GOPATH=$HOME/go
+        export GOBIN=$GOPATH/bin
+        export PATH=$PATH:$GOBIN:/usr/local/go/bin
+        export GO111MODULE=on
+        export GOPROXY=https://goproxy.cn
+    fi
+
+    # listen function
+	listen() {
+	    if [ $# -eq 0 ]; then
+            netstat -lntpu
+	    elif [ $# -eq 1 ]; then
+            netstat -lntup | grep $1
+	    else
+		    echo "Usage: listen [pattern]"
+	    fi
+	}
+
 	# git log encoding problem
 	export LESSCHARSET=utf-8
   ;;
