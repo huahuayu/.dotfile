@@ -49,10 +49,9 @@ set encoding=utf-8
 " 默认相对行号
 set relativenumber
 
-" 普通模式和插入模式光标形状(For iTerm2 on OS X) refer: https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+" 普通模式和插入模式光标形状(参考 https://stackoverflow.com/questions/6488683/how-do-i-change-the-vim-cursor-in-insert-normal-mode)
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 " 普通模式和插入模式光标形状(For tmux running in iTerm2 on OS X)
 if exists('$TMUX')
