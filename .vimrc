@@ -1,7 +1,10 @@
 " 自动语法高亮
 syntax on
 " 支持使用鼠标
-set mouse=a
+if has('mouse')
+  set mouse=a
+endif
+
 " 启用256色
 set t_Co=256
 " 开启文件类型检查，并且载入与该类型对应的缩进规则
