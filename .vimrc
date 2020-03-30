@@ -2,7 +2,10 @@
 syntax on
 
 " 支持使用鼠标
-set mouse=a
+if has('mouse')
+  set mouse=a
+endif
+
 
 " 启用256色
 set t_Co=256
