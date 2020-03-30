@@ -79,7 +79,8 @@ case `uname` in
 
   ;;
   Linux)
-    # commands for Linux go here
+	# git log encoding problem
+	export LESSCHARSET=utf-8
   ;;
   FreeBSD)
     # commands for FreeBSD go here
