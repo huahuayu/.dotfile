@@ -98,6 +98,9 @@ case `uname` in
 		    echo "Usage: listen [pattern]"
 	    fi
 	}
+
+	# git log encoding problem
+	export LESSCHARSET=utf-8
   ;;
   FreeBSD)
     # commands for FreeBSD go here
