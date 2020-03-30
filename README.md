@@ -14,13 +14,13 @@ brew install zsh zsh-completions
 ```
 
 安装 oh-my-zsh  
-via curl
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+``` bash
+sh ~/.dotfile/ohmyzsh_install.sh
 ```
-via wget
-```shell
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+附：安装脚本来源（需科学上网访问）  
+```
+https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 ```
 
 
@@ -30,6 +30,7 @@ ln -sf ~/.dotfile/.zshrc ~/
 ln -sf ~/.dotfile/.zprofile ~/.zprofile  
 ln -sf ~/.dotfile/shiming.zsh-theme ~/.oh-my-zsh/themes/
 ln -sf ~/.dotfile/.tmux.conf ~/
+ln -sf ~/.dotfile/.vimrc ~/
 ```
 
 ### spacevim 安装
