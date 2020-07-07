@@ -1,10 +1,10 @@
 [user]
-	name = Laily
-	email = i@laily.net
+	name = shiming
+	email = codingmylife@gmail.com
 [core]
 	autocrlf = input
 	quotepath = false
-    editor = /usr/local/bin/nvim
+    editor = /usr/bin/vim
 [alias]
     merge2 = "!f() { git checkout $1 && git merge $2 && git checkout -; }; f"
     au = add -u
