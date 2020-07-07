@@ -4,7 +4,6 @@
 [core]
 	autocrlf = input
 	quotepath = false
-    editor = /usr/bin/vim
 [alias]
     merge2 = "!f() { git checkout $1 && git merge $2 && git checkout -; }; f"
     au = add -u
