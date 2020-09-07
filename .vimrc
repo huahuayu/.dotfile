@@ -12,12 +12,18 @@ set t_Co=256
 
 " 根据文件类型缩进
 filetype plugin indent on
+
 " 用4个空格展示已存在的tab键
 set tabstop=4
 " 使用'>'缩进时, 按4个空格缩进 
 set shiftwidth=4
 " 按tab键时缩进4个空格
 set expandtab
+
+" js文件用两个字符缩进
+augroup FileTypeSpecificAutocommands
+    autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
 
 " 回车后下一行和上一行保持相同缩进
 set autoindent

@@ -63,9 +63,17 @@ plugins=(
   z
   jsontools
   vi-mode
-  docker docker-compose
-  zsh-autosuggestions zsh-brew-services zsh_reload zsh-completions ports
+  docker 
+  docker-compose
+  kubectl
+  command-not-found
+  sudo
+  zsh-brew-services 
+  zsh_reload 
+  zsh-completions 
   zsh-syntax-highlighting
+#  zsh-autosuggestions
+  extract
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,3 +114,16 @@ export PATH="/usr/local/sbin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export LC_ALL=en_US.UTF-8
+
+# This speeds up pasting w/ autosuggest
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238
+# pasteinit() {
+#  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+#  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+#}
+
+#pastefinish() {
+#  zle -N self-insert $OLD_SELF_INSERT
+#}
+#zstyle :bracketed-paste-magic paste-init pasteinit
+#zstyle :bracketed-paste-magic paste-finish pastefinish

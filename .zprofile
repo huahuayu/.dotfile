@@ -1,5 +1,6 @@
 case `uname` in
   Darwin)
+    export PATH=/Library/Developer/CommandLineTools/usr/bin:$PATH
 	# list process & ports
 	listen() {
 	    if [ $# -eq 0 ]; then
@@ -10,9 +11,10 @@ case `uname` in
 		echo "Usage: listen [pattern]"
 	    fi
 	}
+    
 
 	# fabric commands
-	export PATH=~/fabric-samples/bin:$PATH
+	export PATH=/Users/shiming/hyperledger/fabric-samples/bin:$PATH
 
 	# alias for go to defang dir
 	alias defang='cd ~/Nutstore/21-defang'	
@@ -29,10 +31,21 @@ case `uname` in
 	# alias for go to java src dir
 	alias javasrc='cd ~/Nutstore/0-IdeaProjects'
 
+	# alias for defang project
+	alias defang='cd ~/Nutstore/21-defang'
+
+    # alias for postgre
+    alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+    alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
 	# add go path
 	export GOPATH=~/Nutstore/5-goland
 	export GOBIN=$GOPATH/bin
 	export PATH=$GOBIN:$GOROOT/bin/:$PATH
+
+    # goproxy
+    export GO111MODULE=off
+    export GOPROXY=https://goproxy.cn
 
 	# add mysql to path
 	export PATH=/usr/local/mysql/bin:$PATH
@@ -70,10 +83,10 @@ case `uname` in
 
 
 	# java env var
-	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
-	export JRE_HOME=${JAVA_HOME}/jre  
-	export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
-	export PATH=${JAVA_HOME}/bin:$PATH
+	#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
+	#export JRE_HOME=${JAVA_HOME}/jre  
+	#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+	#export PATH=${JAVA_HOME}/bin:$PATH
 
 	export PATH=/usr/local/sbin:$PATH
 
@@ -83,6 +96,17 @@ case `uname` in
     # iterm2 shell integration  
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+    # fabirc sample bin
+    export PATH=/Users/shiming/fabric/fabric-samples/bin:$PATH
+
+    # fabric sample config
+    export FABRIC_CFG_PATH=/Users/shiming/fabric/fabric-samples/config
+
+    # jenv
+    export PATH="$HOME/.jenv/bin:$PATH"
+    eval "$(jenv init -)"
+
+    export PATH=/usr/local/bin:$PATH
   ;;
   Linux)
 	# git log encoding problem
