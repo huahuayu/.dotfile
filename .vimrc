@@ -66,14 +66,17 @@ if &diff
    colorscheme evening
 endif
 
+" vim-plug插件配置
+call plug#begin('~/.vim/plugged')
+    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+    Plug 'tomlion/vim-solidity'
+    Plug 'preservim/nerdcommenter'
+call plug#end()
+
 " 不同操作系统配置
 if system('uname -s') == "Darwin\n"
   "OSX
   set clipboard=unnamed
-  call plug#begin('~/.vim/plugged')
-      Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-      Plug 'tomlion/vim-solidity'
-  call plug#end()
 else
   "Linux
 endif
