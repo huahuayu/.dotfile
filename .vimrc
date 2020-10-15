@@ -80,3 +80,7 @@ if system('uname -s') == "Darwin\n"
 else
   "Linux
 endif
+
+" NERDSpaceDelims setting
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
