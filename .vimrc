@@ -37,16 +37,6 @@ set incsearch
 " 保证delete键能删东西 
 set backspace=indent,eol,start
 
-" vim-go 插件
-if system('uname -s') == "Darwin\n"
-  " OSX
-    call plug#begin()
-    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-    call plug#end()
-else
-  " Linux
-endif
-
 " 让vim使用系统剪贴板（mac下unnamed和unnamedplus都是指向系统剪贴板，linux下unnamed和unnamedplus略有不同），兼容mac和linux
 set clipboard^=unnamed,unnamedplus
 
@@ -74,4 +64,16 @@ endif
 if &diff
    syntax off
    colorscheme evening
+endif
+
+" 不同操作系统配置
+if system('uname -s') == "Darwin\n"
+  "OSX
+  set clipboard=unnamed
+  call plug#begin('~/.vim/plugged')
+      Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+      Plug 'tomlion/vim-solidity'
+  call plug#end()
+else
+  "Linux
 endif

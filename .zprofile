@@ -16,8 +16,8 @@ case `uname` in
 	# fabric commands
 	export PATH=/Users/shiming/hyperledger/fabric-samples/bin:$PATH
 
-	# alias for go to defang dir
-	alias defang='cd ~/Nutstore/21-defang'	
+	# alias for go to amber dir
+	alias amber='cd ~/Nutstore/29-amber'	
 
 	# alias for go to jianguoyun dir
 	alias jianguoyun='cd ~/Nutstore'	
