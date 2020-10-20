@@ -76,11 +76,12 @@ case `uname` in
 	#grafana(montier service)
 	export PATH=/usr/local/Cellar/grafana/5.4.3/bin:$PATH
 
-	# nvm
-	export NVM_DIR="$HOME/.nvm"
-	[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-	[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+    # Add default node to path
+    export PATH=$HOME/.nvm/versions/node/v10.22.0/bin:$PATH
 
+    # load nvm
+	export NVM_DIR="$HOME/.nvm"
+    [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
 
 	# java env var
 	#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
