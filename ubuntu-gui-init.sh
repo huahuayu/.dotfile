@@ -11,4 +11,4 @@ sudo apt-get purge --auto-remove shotwell -y
 sudo apt-get autoremove --purge cheese -y
 sudo apt-get clean -y
 sudo apt-get autoremove -y
-sudo apt install git wget curl net-tools vim -y
+sudo apt install git zsh wget curl net-tools vim -y
