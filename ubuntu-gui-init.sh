@@ -12,3 +12,6 @@ sudo apt-get autoremove --purge cheese -y
 sudo apt-get clean -y
 sudo apt-get autoremove -y
 sudo apt install git zsh wget htop curl net-tools vim -y
+
+# set file explorer use location
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
